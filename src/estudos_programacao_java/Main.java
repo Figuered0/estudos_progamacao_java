@@ -1,32 +1,75 @@
 package estudos_programacao_java;
 
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
-
+	
 	public static void main(String[] args) {
-		
-		String product1 = "Computer";
-		String product2 = "Office desk";
-		
-		int age = 30;
-		int code = 5290;
-		char gender = 'F';
-		
-		double price1 = 2100.0;
-		double price2 = 650.50;
-		double measure = 53.234567;
-		
-		
-		
-		System.out.println("Products");
-		System.out.printf("%s, which price is $ %.2f %n", product1, price1); 
-		System.out.printf("%s, which price is $ %.2f %n", product2, price2);
-		
-		System.out.printf("%nRecord: %d years old, code %d and gender: %s %n%n", age, code, gender);
-		
-		System.out.printf("Measure with eigth decimal places: %f %nRouded (three decimal places): %.3f  %nUS decimal point: 53.235", measure, measure, measure);
+
 		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double x = sc.nextDouble();
+		double y = sc.nextDouble();
+		double preco_m2 = sc.nextDouble();
+		
+		double area = x * y;
+		double precott = area * preco_m2;
+		
+		System.out.println("Escreva a largura do terreno, informando o número com apenas uma casa decimal");				
+		System.out.println("Escreva o comprimento do terreno, informando o número com apenas uma casa decimal");				
+		System.out.println("Escreva o preço do m2 do terreno");
+		
+		
+		System.out.println("Essas são as informações do seu terreno");
+		System.out.printf("%.2f%n", area);
+		System.out.printf("%.2f%n", precott);
+		
+		sc.close();
+		
+==========================================================		
+		Scanner sc = new Scanner(System.in);
+		
+		int x;
+		String s1, s2, s3;
+		
+		x = sc.nextInt();
+		sc.nextLine();
+		s1 = sc.nextLine();
+		s2 = sc.nextLine();
+		s3 = sc.nextLine();
+		
+		System.out.println("DADOS DIGITADOS: ");
+		System.out.println(x);
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+		
+===========================================================		
+	
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		String x;
+		int y;
+		double z;
+		char c;
+		
+		x = sc.next();
+		y = sc.nextInt();
+		z = sc.nextDouble();
+		c = sc.next().charAt(0);
+
+		System.out.println("Dados digitados: ");
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+		System.out.println(c);
+		
+		sc.close();
+				
+==========================================================
 		
 		/*
 		int y = 32;

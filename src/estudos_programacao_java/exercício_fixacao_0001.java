@@ -1,5 +1,7 @@
 package estudos_programacao_java;
 
+import java.util.Locale;
+
 public class exercício_fixacao_0001 {
 
 		public static void exercicio_01(String[] args) {
@@ -12,10 +14,19 @@ public class exercício_fixacao_0001 {
 			char gender = 'F';
 			
 			double price1 = 2100.0;
-			double prce2 = 650.50;
+			double price2 = 650.50;
 			double measure = 53.234567;
 			
-			System.out.printf("Products %n %s, which price is $ %2.f %n %s, which price is $ %2.f", product1, price1, product2, price2);
+			
+			
+			System.out.println("Products");
+			System.out.printf("%s, which price is $ %.2f %n", product1, price1); 
+			System.out.printf("%s, which price is $ %.2f %n", product2, price2);
+			
+			System.out.printf("%nRecord: %d years old, code %d and gender: %s %n%n", age, code, gender);
+			
+			System.out.printf("Measure with eigth decimal places: %f %nRouded (three decimal places): %.3f  %nUS decimal point: 53.235", measure, measure, measure);
+			Locale.setDefault(Locale.US);
 			
 		}
 }
