@@ -42,7 +42,7 @@ public class Main {
 		System.out.println(s2);
 		System.out.println(s3);
 		
-===========================================================		
+==========================================================		
 	
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
@@ -84,7 +84,7 @@ public class Main {
 		
 		System.out.printf("%s tem %d anos e ganha R$ %.2f reais %n", nome, idade, renda);
 		
-		//System.out.println(y);
+		System.out.println(y);
 		//System.out.println(x);
 		
 		*/
