@@ -17,10 +17,6 @@ public class Main {
 		double area = x * y;
 		double precott = area * preco_m2;
 		
-		System.out.println("Escreva a largura do terreno, informando o número com apenas uma casa decimal");				
-		System.out.println("Escreva o comprimento do terreno, informando o número com apenas uma casa decimal");				
-		System.out.println("Escreva o preço do m2 do terreno");
-		
 		
 		System.out.println("Essas são as informações do seu terreno");
 		System.out.printf("%.2f%n", area);
